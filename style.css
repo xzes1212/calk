@@ -1,0 +1,87 @@
+.calculator {
+  width: 315px;
+  height: 520px;
+  background-color: #000;
+  border-radius: 10px;
+  margin: 50px auto 40px auto;
+  overflow: hidden;
+  box-shadow: 4px 4px 6px #4f4f4f;
+}
+
+.screen {
+  height: 150px;
+  background-color: #282828;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 10px;
+  box-sizing: border-box;
+  margin: 10px 10px 5px 10px;
+}
+
+
+.output {
+  font-size: 36px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  margin: 5px;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #555555;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 50%; /* добавляем свойство border-radius */
+}
+
+.gray {
+  background-color: #a6a6a6;
+}
+
+.dark-gray {
+  background-color: #333333;
+}
+
+.double-zero {
+  width: 60px;
+  background-color: #555555;
+  margin: 5px;
+}
+
+.zero {
+  width: 60px;
+  margin: 5px;
+}
+
+.orange {
+  background-color: #ff9500;
+}
+
+.button:hover {
+  background-color: #444444;
+}
+
+.button:active {
+  background-color: #222222;
+}
