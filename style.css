@@ -1,87 +1,67 @@
-.calculator {
-  width: 315px;
-  height: 520px;
-  background-color: #000;
-  border-radius: 10px;
-  margin: 50px auto 40px auto;
-  overflow: hidden;
-  box-shadow: 4px 4px 6px #4f4f4f;
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	font-family: sans-serif;
+	outline: none;
 }
 
-.screen {
-  height: 150px;
-  background-color: #282828;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding-right: 10px;
-  box-sizing: border-box;
-  margin: 10px 10px 5px 10px;
+body{
+    height: 100vh;
+    background: linear-gradient(to right,#2193b0, #6dd5ed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.output {
-  font-size: 36px;
-  color: #ffffff;
-  font-weight: bold;
+.container{
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
-
-.buttons {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+.Calculator{
+	background-color: #ecf0f3;
+	padding: 15px;
+	border-radius: 30px;
+	box-shadow: inset 5px 5px 12px #ffffff,
+					 5px 5px 12px rgba(0,0,0,.16);
+	display: grid;
+	grid-template-columns:repeat(4, 68px);
 }
-
-.row {
-  display: flex;
-  width: 100%;
-  justify-content: center;
+input{
+	grid-column: span 4;
+	height: 70px;
+	width: 260px;
+	background-color: #ecf0f3;
+	box-shadow: inset -5px -5px 12px #ffffff,
+				inset  5px  5px 12px rgba(0,0,0,.16);	
+	border: none;
+	border-radius: 30px;
+	color: rgba(70, 70, 70);
+	font-size: 50px;
+	text-align: end;
+	margin: auto;
+	margin-top: 40px;
+	margin-bottom: 30px;
+	padding: 20px;
 }
-
-.button {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  margin: 5px;
-  justify-content: center;
-  align-items: center;
-  font-size: 24px;
-  color: #ffffff;
-  background-color: #555555;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  border-radius: 50%; /* добавляем свойство border-radius */
+button{
+	height: 48px;
+	width: 48px;
+	background-color: #ecf0f3;
+	box-shadow: -5px -5px 12px #ffffff,
+				 5px  5px 12px rgba(0,0,0,.16);	
+	border: none;
+	border-radius: 50%;
+	margin: 8px;
+	font-size: 16px;
 }
-
-.gray {
-  background-color: #a6a6a6;
-}
-
-.dark-gray {
-  background-color: #333333;
-}
-
-.double-zero {
-  width: 60px;
-  background-color: #555555;
-  margin: 5px;
-}
-
-.zero {
-  width: 60px;
-  margin: 5px;
-}
-
-.orange {
-  background-color: #ff9500;
-}
-
-.button:hover {
-  background-color: #444444;
-}
-
-.button:active {
-  background-color: #222222;
+.equal{
+	width: 115px;
+	border-radius: 40px;
+	background-color: #ecf0f3;
+	box-shadow: -5px -5px 12px #ffffff,
+				 5px  5px 12px rgba(0,0,0,.1.6);	
 }
