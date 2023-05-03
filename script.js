@@ -3,10 +3,9 @@ let outputScreen = document.getElementById("outputscreen");
 function display(num) {
   outputScreen.value += num;
 }
-
 function Calculate() {
   let input = outputScreen.value;
-  let regex = /(\d+\.?\d*)([\+\-\*\/])(\d+\.?\d*)/;
+  let regex = /(-?\d+\.?\d*)([\+\-\*\/])(-?\d+\.?\d*)/;
   let match = input.match(regex);
 
   if (match) {
@@ -25,19 +24,16 @@ function Calculate() {
     }
   }
 }
-
-
 function Clear(){
-	outputScreen.value = "";
+  outputScreen.value = "";
 }
 function del(){
-	outputScreen.value = outputScreen.value
-	.slice(0,-1)
+  outputScreen.value = outputScreen.value
+  .slice(0,-1)
 }
-
 function percent() {
   let input = outputScreen.value;
-  let regex = /(\d+\.?\d*)([\+\-\*\/])(\d+\.?\d*)/;
+  let regex = /(-?\d+\.?\d*)([\+\-\*\/])(-?\d+\.?\d*)/;
   let match = input.match(regex);
 
   if (match) {
@@ -56,5 +52,6 @@ function percent() {
     alert("Invalid input");
   }
 }
+
 
 
